@@ -32,6 +32,9 @@ const Header = ({type}) => {
             };
         });
     };
+
+    // const handleSearch
+
     return (
         <div className="header">
             <div className={type === "list" ? "headerContainer listMode" : "headerContainer"}>
@@ -128,7 +131,7 @@ const Header = ({type}) => {
                         </div>
 
                         <div className="headerSearshItem">
-                            <button className="headerBtn">Search</button>
+                            <button className="headerBtn" onClick={handleSearch}>Search</button>
                         </div>
                     </div>
                 </>}
