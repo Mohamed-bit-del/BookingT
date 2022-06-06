@@ -1,5 +1,4 @@
 .navbar {
-    height: 50px;
     background-color: #003580;
     display: flex;
     justify-content: center;
@@ -12,16 +11,34 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-block: 15px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
 .logo {
-    font-weight: 500;
+    cursor: pointer;
+    font-size: 25px;
+    font-family: 'Brush Script MT', cursive;
 }
 
 .navButton {
-    margin-left: 20px;
     border: none;
-    padding: 5px 10px;
+    font-weight: 500;
+    padding: 9px 15px;
     cursor: pointer;
-    color: #003580;
+    font-size: 14px;
+    color: #0071c2;
+    transition: background-color .1s;
+}
+
+.navButton:hover {
+    background-color: rgba(243, 243, 243, .9);
+}
+
+.navButton:last-child {
+    margin-inline-start: 20px;
 }

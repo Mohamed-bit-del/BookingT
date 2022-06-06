@@ -47,7 +47,10 @@ const Footer = () => {
                     <li className="fListItem">Terms &amp; conditions</li>
                 </ul>
             </div>
-            <div className="fText">Copyright &copy; 2022 TahaBooking</div>
+            <div className="fText">
+                <p>Copyright &copy; 2022 TahaBooking</p>
+                <p>Made By Mohamed Taha</p>
+            </div>
         </div>
     )
 }

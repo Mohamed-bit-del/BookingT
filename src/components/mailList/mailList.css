@@ -11,20 +11,25 @@
 }
 
 .mailInputContainer > input {
-    width: 300px;
-    height: 30px;
-    padding: 10px;
     border: none;
+    outline: none;
+    width: 300px;
+    height: 40px;
+    padding: 5px;
     margin-right: 10px;
     border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .mailInputContainer > button {
-    height: 50px;
-    background-color: #0071c2;
-    color: white;
-    font-weight: 500;
     border: none;
+    height: 50px;
+    min-width: 120px;
+    color: white;
+    background-color: #0071c2;
+    font-size: 16px;
+    font-weight: 600;
     border-radius: 5px;
     cursor: pointer;
 }
