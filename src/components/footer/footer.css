@@ -1,18 +1,16 @@
 .footer {
-    width: 100%;
-    width: 1024px;
-    font-size: 13px;
     font-weight: 600;
+    margin-block: 10px;
 }
 
 .fLists {
     display: flex;
     justify-content: space-between;
-    margin-block: 30px;
+    margin-block: 20px;
 }
 
 .fList {
-    list-style: none;
+    font-size: 15px;
     padding-inline-start: 0;
 }
 
@@ -25,7 +23,6 @@
 .fText {
     display: flex;
     justify-content: space-between;
-    margin-block: 10px;
     font-size: 18px;
     color: #003580;
     cursor: pointer;

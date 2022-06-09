@@ -1,12 +1,13 @@
-.homeContainer {
+.mb {
+    margin-block: 20px;
     margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
 }
 
 .homeTitle {
-    width: 1024px;
+    margin-block: 20px;
     font-size: 20px;
+}
+
+.baGr {
+    background-color: #003580;
 }

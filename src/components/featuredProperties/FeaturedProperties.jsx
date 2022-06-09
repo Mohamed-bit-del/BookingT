@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./featuredProperties.css";
+import "../custom.css";
 
 export const FeaturedProperties = () => {
     return (

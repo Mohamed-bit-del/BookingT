@@ -1,0 +1,91 @@
+/* 
+    /=-=-=-=- Using Library -=-=-=-=-=/
+
+    1- ////////
+    2- ///////
+    3- //////
+*/
+
+/* 
+    /=-=-=-=- structure comment -=-=-=-=/
+
+    1- Common Style
+    2- General Style
+    3- Sections
+        3.1 ///////
+        3.2 ///////
+        3.2 ///////
+        3.2 ///////
+*/
+
+/*=-=-=-=-=-=-=-=-=-=-=- Common Style -=-=-=-=-=-=-=-=-=-=-=*/
+body {
+    background: var(--White);
+    position: relative;
+    text-align: start;
+    direction: ltr;
+}
+
+.container {
+    width: 1320px;
+    margin-inline: auto;
+    padding-inline: 15px;
+}
+
+@media (max-width: 575.98px) {
+    .container {
+        max-width: 100%;
+    } 
+}
+
+@media (min-width: 576px) and (max-width: 767.98px){
+    .container {
+        max-width: 540px;
+    } 
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .container {
+        max-width: 720px; 
+    } 
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .container {
+        max-width: 960px; 
+    } 
+}
+
+@media (min-width: 1200px) and (max-width: 1400) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+:root {
+    --White: #FFF;
+    --DarkCerulean: #003580 
+}
+
+/*=-=-=-=-=-=-=-=-=-=-=-=- General Styels -=-=-=-=-=-=-=-=-=-=-=*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+ul,ol {
+    list-style: none;
+}
+
+.baCo {
+    background-color:var(--DarkCerulean)
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}

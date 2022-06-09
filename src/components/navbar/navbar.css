@@ -1,25 +1,11 @@
 .navbar {
-    background-color: #003580;
     display: flex;
-    justify-content: center;
-}
-
-.navContainer {
-    width: 100%;
-    max-width: 1024px;
-    color: white;
-    display: flex;
-    align-items: center;
     justify-content: space-between;
     padding-block: 15px;
 }
 
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
 .logo {
+    color: var(--White);
     cursor: pointer;
     font-size: 25px;
     font-family: 'Brush Script MT', cursive;

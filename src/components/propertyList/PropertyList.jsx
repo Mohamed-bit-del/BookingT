@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import "./propertyList.css"
+import "../custom.css"
 
 const PropertyList = () => {
     return (
