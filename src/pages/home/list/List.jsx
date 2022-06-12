@@ -6,6 +6,7 @@ import { format } from "date-fns";
 import { useState } from "react";
 import { DateRange } from "react-date-range";
 import SearchItem from "../../../components/searchItem/SearchItem";
+import MasterLayout from "../../../layouts/MasterLayout";
 
 const List = () => {
 
@@ -20,9 +21,7 @@ const List = () => {
     const [options, setOptions] = useState(location.state?.options ?? null);
 
     return (
-        <div>
-            <Navbar/>
-            <Header type="list"/>
+        <MasterLayout>
             <div className="listContainer">
                 <div className="listWrapper">
                     <div className="listSearch">
@@ -89,7 +88,7 @@ const List = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </MasterLayout>
     )
 }
 

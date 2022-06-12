@@ -1,6 +1,8 @@
 import "./footer.css"
 const Footer = () => {
     return (
+        <div className="container">
+
         <div className="footer">
             <div className="fLists">
                 <ul className="fList">
@@ -51,6 +53,7 @@ const Footer = () => {
                 <p>Copyright &copy; 2022 TahaBooking</p>
                 <p>Made By Mohamed Taha</p>
             </div>
+        </div>
         </div>
     )
 }

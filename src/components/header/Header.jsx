@@ -42,7 +42,7 @@ const Header = ({type}) => {
     };
 
     return (
-        <div className="header">
+        <div className="header baCo">
             <div className={type === "list" ? "headerContainer listMode" : "headerContainer"}>
                 <div className="headerList">
                     <div className="headerListItem active">
