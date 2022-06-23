@@ -1,24 +1,19 @@
-.header {
+header {
     color: var(--White);
-    display: flex;
-    justify-content: center;
     position: relative;
 }
 
 .headerContainer {
-    width: 100%;
-    max-width: 1024px;
-    margin: 20px 0px 100px 0px;
+    padding-block: 20px 80px;
 }
 
 .headerContainer.listMode {
-    margin: 20px 0px 0px 0px;
+    padding-block-end: 20px;
 }
 
 .headerList {
     display: flex;
     gap: 40px;
-    margin-block-end: 50px;
     position: relative;
 }
 
@@ -63,6 +58,7 @@
 }
 
 .headerTitel {
+    margin-block-start: 50px;
     font-size: 40px;
 }
 
@@ -102,6 +98,8 @@
     border-radius: 7px;
     position: absolute;
     inset-block-end: -25px;
+    inset-inline-start: 50%;
+    transform: translate(-50%, 0);
     width: 100%;
     max-width: 1024px;
     z-index: 2;

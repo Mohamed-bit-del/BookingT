@@ -9,27 +9,27 @@ import "./home.css";
 
 const Home = () => {  
     return (
-        <div>
-            <div className="baCo">
-                <div className="container"><Navbar /></div>
-                <div className="container"><Header /></div>
-            </div>
+        <div className="home">
+                <Navbar />
+                <Header />
 
             <div className="mb">
-                <div className="container"><Featured /></div>
+                <Featured />
+
                 <div className="container">
-                    <h1 className="homeTitle">Browse by property type</h1>
-                    <PropertyList />
+                    <h2 className="homeTitle">Browse by property type</h2>
                 </div>
-                <div className="container"> 
+                <PropertyList />
+
+                <div className="container">
                     <h1 className="homeTitle">Homes guests love</h1>
-                    <FeaturedProperties />
                 </div>
-                <div className="baGr">
-                    <div className="container"><MailList/></div>
-                </div>
+                <FeaturedProperties />
+
+                <MailList/>
             </div>
-                <div className="container"><Footer/></div>
+
+            <Footer/>
         </div>
     );
 };

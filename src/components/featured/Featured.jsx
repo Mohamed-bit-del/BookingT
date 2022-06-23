@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-import "../custom.css";
 import "./featured.css";
+import "../Style/custom.css";
 
 const Featured = () => {
     return (
-        // <div className="container">
+        <div className="container">
             <div className="featured">
                 <Link to="/hotels">
                     <div className="featuredItem">
@@ -42,7 +42,7 @@ const Featured = () => {
                     </div>
                 </Link>
             </div>
-        // </div>
+        </div>
     )
 }
 

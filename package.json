@@ -41,5 +41,20 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "Create Booking App React",
+  "main": "index.js",
+  "devDependencies": {
+    "webpack": "^5.73.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mohamed-bit-del/BookingT.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mohamed-bit-del/BookingT/issues"
+  },
+  "homepage": "https://github.com/Mohamed-bit-del/BookingT#readme"
 }

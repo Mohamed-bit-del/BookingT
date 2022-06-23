@@ -5,7 +5,6 @@
 }
 
 .fpItem {
-    flex: 1;
     gap: 10px;
     display: flex;
     flex-direction: column;
@@ -30,6 +29,11 @@
     font-weight: 600;
 }
 
+.fpRating {
+    display: flex;
+    justify-content: space-between;
+}
+
 .fpRating > button {
     background-color: #003580;
     color: white;
@@ -37,8 +41,10 @@
     padding: 3px;
     margin-right: 10px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .fpRating > span {
     font-size: 14px;
+    font-weight: bold;
 }

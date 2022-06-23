@@ -1,4 +1,5 @@
 import "./searchItem.css"
+import "../Style/custom.css"
 
 const SearchItem = () => {
     return (
@@ -22,7 +23,7 @@ const SearchItem = () => {
                 <div className="siDetailTexts">
                     <span className="siPrice">$123</span>
                     <span className="siTaxOp">includes taxes and fees</span>
-                    <button className="siCheckButton">See availability</button>
+                    <button className="siCheckButton headerBtn">See availability</button>
                 </div>
             </div>
         </div>

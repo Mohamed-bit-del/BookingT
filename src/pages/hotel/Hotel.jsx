@@ -2,11 +2,9 @@ import { faCircleXmark } from "@fortawesome/free-regular-svg-icons"
 import { faCircleArrowLeft, faCircleArrowRight, faLocationDot } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { useState } from "react"
-import Footer from "../../components/footer/Footer"
-import Header from "../../components/header/Header"
-import MailList from "../../components/mailList/MailList"
-import Navebar from "../../components/navbar/Navbar"
+import MasterLayout from "../../layouts/MasterLayout"
 import "./hotel.css"
+import "../../components/Style/custom.css";
 
 const Hotel = () => {
 
@@ -52,54 +50,57 @@ const Hotel = () => {
     };
 
     return (
-        <div>
-            <Navebar/>
-            <Header type="list"/>
-            <div className="hotelContainer">
-                {open && <div className="slider">
-                    <FontAwesomeIcon icon={faCircleXmark} className="close" onClick={()=> setOpen(false)} />
-                    <FontAwesomeIcon icon={faCircleArrowLeft} className="arrow" onClick={() => handleMove("left")} />
-                    <div className="sliderWrapper">
-                        <img src={photos[slideNumber].src} className="sliderImg" />
-                    </div>
-                    <FontAwesomeIcon icon={faCircleArrowRight} className="arrow" onClick={() => handleMove("right")} />
-                </div>}
-                <div className="hotelWrapper">
-                    <button className="bookNow">Reserve or Book Now!</button>
-                    <h2 className="hotelTitle">Grand Hotel</h2>
-                    <div className="hotelAddress">
-                        <FontAwesomeIcon icon={faLocationDot} />
-                        <span> cairo city, Egypt</span>
-                    </div>
-                    <span className="hotelDistance">
-                        Excellent location - 500m from center
-                    </span>
-                    <span className="hotelPriceHighlight">Book a stay over $114 at this property and get a free airport taxi</span>
-                    <div className="hotelImages">
-                        {photos.map((photo, i) => (
-                            <div className="hotelImgWrapper">
-                                <img onClick={() => handleOpen(i)} src={photo.src} alt="" className="hotelImg" />
-                            </div>
-                        ))}
-                    </div>
-                    <div className="hotelDetails">
-                        <div className="hotelDetailsTexts">
-                        <h2 className="hotelTitle">Stay in the heart of City</h2>
-                        <p className="hotelDesc">Located a 5-minute walk from St. Florian's Gate in Krakow, Tower Street Apartments has accommodations with air conditioning and free WiFi. The units come with hardwood floors and feature a fully equipped kitchenette with a microwave, a flat-screen TV, and a private bathroom with shower and a hairdryer. A fridge is also offered, as well as an electric tea pot and a coffee machine. Popular points of interest near the apartment include Cloth Hall, Main Market Square and Town Hall Tower. The nearest airport is John Paul II International Kraków–Balice, 16.1 km from Tower Street Apartments, and the property offers a paid airport shuttle service.</p>
+        <MasterLayout>
+            <div className="container">
+                <div className="hotelContainer">
+                    {open && <div className="slider">
+                        <FontAwesomeIcon icon={faCircleXmark} className="close" onClick={()=> setOpen(false)} />
+                        <FontAwesomeIcon icon={faCircleArrowLeft} className="arrow" onClick={() => handleMove("left")} />
+                        <div className="sliderWrapper">
+                            <img src={photos[slideNumber].src} className="sliderImg" />
                         </div>
-                        <div className="hotelDetailsPrice">
-                            <h2>Perfect for a 9-night stay!</h2>
-                            <span>Located in the real heart of Krakow, this property has an excellent location score of 9.8!</span>
-                            <h4 ><b>$945</b>
-                            <small>(9 nights)</small></h4>
-                            <button className="">Reserve or Book Now!</button>
+                        <FontAwesomeIcon icon={faCircleArrowRight} className="arrow" onClick={() => handleMove("right")} />
+                    </div>}
+                    <div className="hotelWrapper">
+                        <div className="content">
+                            <div className="content__hotel">
+                                <h2 className="hotelTitle">Grand Hotel</h2>
+                                <div className="hotelAddress">
+                                    <FontAwesomeIcon icon={faLocationDot} />
+                                    <span> cairo city, Egypt</span>
+                                </div>
+                                <h3 className="hotelDistance">Excellent location - 500m from center</h3>
+                                <h3 className="hotelPriceHighlight">Book a stay over $114 at this property and get a free airport taxi</h3>
+                            </div>
+                            
+                            <button className="bookNow headerBtn">Reserve or Book Now!</button>
+                        </div>
+                        <div className="hotelImages">
+                            {photos.map((photo, i) => (
+                                <div className="hotelImgWrapper">
+                                    <img onClick={() => handleOpen(i)} src={photo.src} alt="" className="hotelImg" />
+                                </div>
+                            ))}
+                        </div>
+                        <div className="hotelDetails">
+                            <div className="hotelDetailsTexts">
+                            <h2 className="hotelTitle">Stay in the heart of City</h2>
+                            <p className="hotelDesc">Located a 5-minute walk from St. Florian's Gate in Krakow, Tower Street Apartments has accommodations with air conditioning and free WiFi. The units come with hardwood floors and feature a fully equipped kitchenette with a microwave, a flat-screen TV, and a private bathroom with shower and a hairdryer. A fridge is also offered, as well as an electric tea pot and a coffee machine. Popular points of interest near the apartment include Cloth Hall, Main Market Square and Town Hall Tower. The nearest airport is John Paul II International Kraków–Balice, 16.1 km from Tower Street Apartments, and the property offers a paid airport shuttle service.</p>
+                            </div>
+                            <div className="hotelDetailsPrice">
+                                <h2>Perfect for a 9-night stay!</h2>
+                                <span>Located in the real heart of Krakow, this property has an excellent location score of 9.8!</span>
+                                <h3>
+                                    <b>$945</b>
+                                    <span>(9 nights)</span>
+                                </h3>
+                                <button className="headerBtn">Reserve or Book Now!</button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <MailList/>
-                <Footer/>
             </div>
-        </div>
+        </MasterLayout>
     )
 }
 

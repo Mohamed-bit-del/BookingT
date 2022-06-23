@@ -2,22 +2,36 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
+    margin-block-start: 20px;
 }
 
 .hotelWrapper {
-    width: 100%;
-    max-width: 1024px; 
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    position: relative;
+    gap: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 2;
+}
+
+.content__hotel {
+    display: flex;
+    flex-direction: column;
+}
+
+.hotelAddress {
+    font-size: 14px;
+}
+
+.hotelAddress span {
+    padding-inline-start: 5px;
 }
 
 .bookNow {
-    position: absolute;
-    top: 10px;
-    right: 0;
     border: none;
     padding: 10px 20px;
     background-color: #0071c2;
@@ -28,14 +42,7 @@
 }
 
 .hotelTitle {
-    font-size: 24px;
-}
-
-.hotelAddress {
-    font-size: 12px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    font-size: 30px;
 }
 
 .hotelDistance {
@@ -71,7 +78,7 @@
 }
 
 .hotelDetailsTexts {
-    flex: 3;
+    flex: 4;
 }
 
 .hotelDesc {
@@ -99,6 +106,12 @@
 
 .hotelDetailsPrice > h4 {
     font-weight: 300;
+}
+
+.hotelDetailsPrice > h3 > span {
+    font-weight: 600;
+    font-size: 14px;
+    padding-inline-start: 3px;
 }
 
 .hotelDetailsPrice > button {

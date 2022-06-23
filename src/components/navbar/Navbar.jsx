@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import "./navbar.css";
-import "../custom.css";
+import "../Style/custom.css";
 
 const Navebar = () => {
     return (
-        <div className="baCo">
+        <nav className="baCo">
             <div className="container">
                 <div className="navbar">
                     <Link to="/">
@@ -17,7 +17,7 @@ const Navebar = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </nav>
     )
 }
 

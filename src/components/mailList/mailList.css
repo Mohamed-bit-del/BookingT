@@ -1,19 +1,18 @@
 .mail {
-    width: 100%;
-    margin-top: 50px;
-    color: var(--White);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     gap: 20px;
+    color: var(--White);
     padding-block: 50px;
+    margin-block-start: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .mailInputContainer > input {
     border: none;
     outline: none;
     width: 300px;
-    height: 40px;
+    height: 50px;
     padding: 5px;
     margin-right: 10px;
     border-radius: 5px;

@@ -1,28 +1,28 @@
-import "./list.css";
-import Navbar from '../../../components/navbar/Navbar'
-import Header from '../../../components/header/Header'
+import "../../../components/Style/custom.css";
 import { useLocation } from "react-router-dom";
 import { format } from "date-fns";
 import { useState } from "react";
 import { DateRange } from "react-date-range";
 import SearchItem from "../../../components/searchItem/SearchItem";
 import MasterLayout from "../../../layouts/MasterLayout";
+import "./list.css";
+import "../../../components/Style/custom.css";
 
 const List = () => {
 
-    const location =useLocation();
-    const [destination, setDestination] = useState(location.state?.destination ?? null);
+    const location = useLocation();
+    const [destination] = useState(location.state?.destination ?? null); // , setDestination
     const [date, setDate] = useState(location.state?.date ?? [{
         startDate: new Date(),
         endDate: new Date(),
         key: 'selection',
     }]);
     const [openDate, setOpenDate] = useState(false);
-    const [options, setOptions] = useState(location.state?.options ?? null);
+    // const [options, setOptions] = useState(location.state?.options ?? null);
 
     return (
         <MasterLayout>
-            <div className="listContainer">
+            <div className="container">
                 <div className="listWrapper">
                     <div className="listSearch">
                         <h2 className="lsTitle">Search</h2>
@@ -46,27 +46,27 @@ const List = () => {
                             <div className="lsOptions">
                                 <div className="lsOptionItem">
                                     <span className="lsOpitonText">Min Price <small>Pre night</small></span>
-                                    <input type="number" className="lsOptionInput" />
+                                    <input type="number" className="lsOptionInput" placeholder="0" />
                                 </div>
                                 
                                 <div className="lsOptionItem">
                                     <span className="lsOpitonText">Max Price <small>Pre night</small></span>
-                                    <input type="number" className="lsOptionInput" />
+                                    <input type="number" className="lsOptionInput" placeholder="0" />
                                 </div>
 
                                 <div className="lsOptionItem">
                                     <span className="lsOpitonText">Adult </span>
-                                    <input type="number" min={1} className="lsOptionInput" placeholder="Adult" />
+                                    <input type="number" min={1} className="lsOptionInput" placeholder="0" />
                                 </div>
 
                                 <div className="lsOptionItem">
                                     <span className="lsOpitonText">Children </span>
-                                    <input type="number" min={0} className="lsOptionInput" placeholder="Children" />
+                                    <input type="number" min={0} className="lsOptionInput" placeholder="0" />
                                 </div>
 
                                 <div className="lsOptionItem">
                                     <span className="lsOpitonText">Room </span>
-                                    <input type="number"min={1} className="lsOptionInput" placeholder="Room" />
+                                    <input type="number"min={1} className="lsOptionInput" placeholder="0" />
                                 </div>
                             </div>
                         </div>

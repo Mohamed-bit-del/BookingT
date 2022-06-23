@@ -27,7 +27,8 @@ body {
 }
 
 .container {
-    width: 1320px;
+    width: 100%;
+    max-width: 1320px;
     margin-inline: auto;
     padding-inline: 15px;
 }
@@ -40,13 +41,13 @@ body {
 
 @media (min-width: 576px) and (max-width: 767.98px){
     .container {
-        max-width: 540px;
+        max-width: 640px;
     } 
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
     .container {
-        max-width: 720px; 
+        max-width: 768px; 
     } 
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -55,7 +56,7 @@ body {
     } 
 }
 
-@media (min-width: 1200px) and (max-width: 1400) {
+@media (min-width: 1200px) and (max-width: 1440px) {
     .container {
         max-width: 1140px;
     }
