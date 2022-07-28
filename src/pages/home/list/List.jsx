@@ -9,16 +9,15 @@ import "./list.css";
 import "../../../components/Style/custom.css";
 
 const List = () => {
-
     const location = useLocation();
-    const [destination] = useState(location.state?.destination ?? null); // , setDestination
+    const [destination, setDestination] = useState(location.state?.destination ?? null);
     const [date, setDate] = useState(location.state?.date ?? [{
         startDate: new Date(),
         endDate: new Date(),
         key: 'selection',
     }]);
     const [openDate, setOpenDate] = useState(false);
-    // const [options, setOptions] = useState(location.state?.options ?? null);
+    const [options, setOptions] = useState(location.state?.options ?? null);
 
     return (
         <MasterLayout>

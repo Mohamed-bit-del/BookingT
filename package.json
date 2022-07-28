@@ -19,7 +19,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "set PORT=3006 && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -42,19 +42,6 @@
       "last 1 safari version"
     ]
   },
-  "description": "Create Booking App React",
-  "main": "index.js",
   "devDependencies": {
-    "webpack": "^5.73.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Mohamed-bit-del/BookingT.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Mohamed-bit-del/BookingT/issues"
-  },
-  "homepage": "https://github.com/Mohamed-bit-del/BookingT#readme"
+  }
 }
