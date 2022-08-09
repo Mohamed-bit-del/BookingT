@@ -181,3 +181,11 @@ header {
 .optionCounterButton:disabled {
     cursor: not-allowed;
 }
+
+@media (max-width: 768px)
+
+@media (max-width: 991.98px) {
+    .headerSearch {
+        display: none;
+    }
+}

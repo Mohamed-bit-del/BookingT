@@ -1,8 +1,12 @@
+import { useState } from "react";
+import Hamburger from 'hamburger-react';
 import { Link } from "react-router-dom";
 import "./navbar.css";
 import "../Style/custom.css";
 
 const Navebar = () => {
+    const [isOpen, setOpen] = useState(false);
+
     return (
         <nav className="baCo">
             <div className="container">
@@ -15,6 +19,9 @@ const Navebar = () => {
                         <button className="navButton">Register</button>
                         <button className="navButton">Login</button>
                     </div>
+
+                    <Hamburger direction="left" color="white" toggled={isOpen} toggle={setOpen} />
+
                 </div>
             </div>
         </nav>

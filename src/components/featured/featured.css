@@ -1,5 +1,6 @@
 .featured {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
     z-index: 1;

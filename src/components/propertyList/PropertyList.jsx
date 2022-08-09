@@ -1,49 +1,15 @@
-import { useState, useEffect } from "react";
-import PostPropList from "../posts/PostPropList";
+import { Link } from "react-router-dom";
 
 import "./propertyList.css"
 import "../Style/custom.css"
 
 const PropertyList = () => {
 
-    const [posts, setPost] = useState(null);
-    const [isLoading, setIsLoading] = useState(false);
-    const [errMsg, setErrMsg] = useState(null);
-
-    useEffect(() => {
-        setIsLoading(true)
-        fetch("http://localhost:3007/pList")
-        .then((res) => {
-            if(!res.ok) {
-                throw Error("Not Found");
-            }
-            return res.json();
-        })
-        .then((data) => {
-            console.log(data);
-            setPost(data);
-            setIsLoading(false)
-        })
-        .catch((err) => {
-            setIsLoading(false);
-            setErrMsg(err.message);
-        });
-    }, []);
-
     return (
         <div className="container">
             <div className="pList">
-            {posts &&
-                posts.map((post) => (
-                    <PostPropList key={post.id} post={post} />
-            ))}
-            {isLoading && <h2>Loding ...</h2>}
-            {!posts && !isLoading && !errMsg && (
-                <div className="not-found">No Posts</div>
-            )}
-            {errMsg && <div className="error">{errMsg}</div>}
 
-                {/* <Link to="/hotels/2">
+                <Link to="/hotels/2">
                     <div className="pListItem">
                         <img src="https://cf.bstatic.com/xdata/images/xphoto/square300/57584488.webp?k=bf724e4e9b9b75480bbe7fc675460a089ba6414fe4693b83ea3fdd8e938832a6&o=" alt="" className="pListImg" />
                         <div className="pListTitle">
@@ -51,7 +17,47 @@ const PropertyList = () => {
                             <span>233 hotels</span>
                         </div>
                     </div>
-                </Link> */}
+                </Link>
+
+                <Link to="/hotels/2">
+                    <div className="pListItem">
+                        <img src="https://cf.bstatic.com/static/img/theme-index/carousel_320x240/card-image-apartments_300/9f60235dc09a3ac3f0a93adbc901c61ecd1ce72e.jpg" alt="" className="pListImg" />
+                        <div className="pListTitle">
+                            <h3>Apartments</h3>
+                            <span>50 Apartments</span>
+                        </div>
+                    </div>
+                </Link>
+
+                <Link to="/hotels/2">
+                    <div className="pListItem">
+                        <img src="https://cf.bstatic.com/static/img/theme-index/carousel_320x240/bg_resorts/6f87c6143fbd51a0bb5d15ca3b9cf84211ab0884.jpg" alt="" className="pListImg" />
+                        <div className="pListTitle">
+                            <h3>Resorts</h3>
+                            <span>78 Resorts</span>
+                        </div>
+                    </div>
+                </Link>
+
+                <Link to="/hotels/2">
+                    <div className="pListItem">
+                        <img src="https://cf.bstatic.com/static/img/theme-index/carousel_320x240/card-image-villas_300/dd0d7f8202676306a661aa4f0cf1ffab31286211.jpg" alt="" className="pListImg" />
+                        <div className="pListTitle">
+                            <h3>Villas</h3>
+                            <span>12 Villas</span>
+                        </div>
+                    </div>
+                </Link>
+
+                <Link to="/hotels/2">
+                    <div className="pListItem">
+                        <img src="https://cf.bstatic.com/static/img/theme-index/carousel_320x240/card-image-chalet_300/8ee014fcc493cb3334e25893a1dee8c6d36ed0ba.jpg" alt="" className="pListImg" />
+                        <div className="pListTitle">
+                            <h3>cabins</h3>
+                            <span>56 cabins</span>
+                        </div>
+                    </div>
+                </Link>
             </div>
         </div>
     )

@@ -28,3 +28,9 @@
 .navButton:last-child {
     margin-inline-start: 20px;
 }
+
+@media (max-width: 991.98px) {
+    .navItem {
+        display: none
+    }
+}
