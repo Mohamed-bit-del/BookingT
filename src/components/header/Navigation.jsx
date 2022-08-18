@@ -1,10 +1,11 @@
 import NavLinks  from "./NavLinks";
+import "./header.css"
 
 function Navigation() {
     return (
-        <div className="Navigation">
+        <nav className="Navigation">
             <NavLinks />
-        </div>
+        </nav>
     )
 }
 

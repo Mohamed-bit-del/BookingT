@@ -1,5 +1,5 @@
 import { faCalendarDays } from '@fortawesome/free-regular-svg-icons';
-import { faBed, faCar, faPerson, faPlane, faTaxi } from '@fortawesome/free-solid-svg-icons';
+import { faBed, faPerson } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import "./header.css";
 import "../Style/custom.css";
@@ -9,8 +9,8 @@ import 'react-date-range/dist/styles.css'; // main style file
 import 'react-date-range/dist/theme/default.css'; // theme css file
 import {format} from "date-fns";
 import { useNavigate } from 'react-router-dom';
-// import Navigation from './Navigation';
-// import MobileNavigation from './MobileNavigation';
+import Navigation from "./Navigation";
+import MobileNavigation from './MobileNavigation';
 
 const Header = ({type}) => {
     const [destination, setDestination] = useState("");
@@ -47,10 +47,10 @@ const Header = ({type}) => {
         <header className="baCo">
             <div className="container">
                 <div className={type === "list" ? "headerContainer listMode" : "headerContainer"}>
-                    {/* <div className='NavBar'>
+                    <div className='NavBar'>
                         <Navigation />
                         <MobileNavigation />
-                    </div> */}
+                    </div>
                     {type !== "list" && 
                     <>
                         <h2 className="headerTitel">A lifetime of discounts? It's Genius.</h2>
