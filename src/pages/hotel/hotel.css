@@ -163,3 +163,26 @@
     color: lightgray;
     cursor: pointer;
 }
+
+@media (max-width: 767px) {
+    .hotelImgWrapper {
+        width: 100%;
+    }
+    
+    .content {
+        flex-direction: column;
+    }
+    
+    .hotelWrapper {
+        width: 100%;
+    }
+
+    .sliderImg {
+        width: 100%;
+        height: auto;
+    }
+
+    .hotelDetails {
+        flex-direction: column;
+    }
+}

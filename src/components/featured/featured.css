@@ -31,8 +31,20 @@
     font-weight: 700;
 }
 
+@media (max-width: 576px) {
+    .featuredTitles {
+        inset-block-end: 40px;
+    }
+}
+
 @media (max-width: 991.98px) {
     .featured {
         flex-direction: column;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .featuredTitles {
+        inset-block-end: 25px;
     }
 }

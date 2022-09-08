@@ -30,6 +30,10 @@ header {
     width: max-content;
 }
 
+.Navigation .headerListItem {
+    transform: unset !important;
+}
+
 .headerListItem span:last-child {
     font-weight: bold;
 }
@@ -208,7 +212,6 @@ header {
     }
 
     .NavBar .MobileNavigation {
-        /* height: 0; */
         display: flex;
         flex-direction: column;
     }
@@ -222,5 +225,11 @@ header {
         inset-block-start: 0;
         padding-block: 20px;
         padding-inline: 10px; */
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .headerSearch {
+        width: 95%;
     }
 }

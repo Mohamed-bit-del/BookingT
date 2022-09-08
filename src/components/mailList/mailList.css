@@ -31,3 +31,22 @@
     border-radius: 5px;
     cursor: pointer;
 }
+
+@media (max-width: 576px) {
+    .mailInputContainer {
+        width: 100%;
+    }
+
+    .mailInputContainer > button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-inline: auto;
+    }
+
+    .mailInputContainer > input {
+        width: 100%;
+        margin-inline-end: 0;
+        margin-block-end: 20px;
+    }
+}

@@ -90,3 +90,35 @@
 .listResult {
     width: 65%
 }
+
+@media (max-width: 768px) {
+    .listWrapper {
+        flex-direction: column;
+    }
+    
+    .listSearch {
+        width: 100%;
+        margin-block-end: 50px;
+        position: relative;
+    }
+
+    .lsItem .date {
+        width: 100%;
+    }
+    
+    .listResult {
+        width: 100%;
+    }
+
+
+}
+
+@media (max-width: 992px) {
+    .searchItem {
+        flex-direction: column;
+    }
+
+    .siImg {
+        width: 100%;
+    }
+}

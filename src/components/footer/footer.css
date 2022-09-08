@@ -12,7 +12,8 @@
 
 .fList {
     font-size: 15px;
-    padding-inline-start: 0;
+    margin-inline: 5px;
+    margin-block-end: 20px;
 }
 
 .fListItem {
@@ -21,11 +22,22 @@
     cursor: pointer;
 }
 
+.fListItem:first-of-type {
+    font-weight: bold;
+}
+
 .fText {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     font-size: 18px;
+    line-height: 1.5;
     color: #003580;
     cursor: pointer;
+}
+
+@media (max-width: 576px) {
+    .fLists {
+        flex-direction: column;
+    }
 }
